@@ -1,0 +1,147 @@
+
+body {
+    font-family: 'Inter';
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #212529;
+    color: #FFFFFFCC;
+    padding: 90px 0;
+}
+
+header > h1 {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+
+header > h1 > span {
+    color: #484FFB;
+}
+
+header > p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.header__button__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+    width: 85%;
+}
+
+header > div > button {
+    background-color: #212529;
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+    border-radius: 32px;
+    padding: .5rem 0;
+}
+
+main {
+    background-color: #E9ECEF;
+    padding: 50px 0 0 20px;
+}
+
+main > h2 {
+    font-weight: 500;
+}
+
+main > section {
+    padding: 30px 0 60px 0;
+    display: flex;
+    overflow-x: scroll;
+    gap: 12px;
+}
+
+.card__container {
+    width: 347px;
+    min-width: 347px;
+    height: 240px;
+    background-color: #FFFFFF;
+    padding: 32px 24px;
+}
+.card__header {
+    display: flex;
+}
+
+
+
+.card__header > h2 {
+    font-size: 20px;
+    padding: 14px 17px;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 60px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    gap: .3rem;
+}
+
+.card__info > h3 {
+    font-weight: 600;
+}
+
+.card__info > p {
+    font-size: .8rem;
+    color: #495057;
+}
+
+.card__descprition {
+    margin-top: 10px;
+    font-size: .8rem;
+    color: #495057;
+    line-height: 1.3rem;
+}
+
+.type__container {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.type {
+    background: #4D52D31A;
+    color: #4D52D3;
+    font-size: .8rem;
+    padding: .3rem .5rem;
+}
+
+@media (min-width: 769px){
+
+    .header__button__container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header > div > button {
+        width: 10rem;
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 0;
+    }
+
+    main > section {
+        overflow-x: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1072px;
+    }
+}
